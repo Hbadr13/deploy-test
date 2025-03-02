@@ -49,6 +49,7 @@ const express_1 = __importStar(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const cors_1 = __importDefault(require("cors"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
+const player_router_1 = __importDefault(require("@routes/player/player.router"));
 dotenv_1.default.config();
 console.log(process.env.REACT_APP_CLOUD_NAME);
 console.log(process.env.REACT_APP_API_KEY);
@@ -77,4 +78,4 @@ r.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     res.status(200).json({ message: 'Hello SofascoreCloning' });
 }));
 app.use('/', r);
-// app.use('/api/v1/player', playerRouter)
+app.use('/api/v1/player', player_router_1.default);
