@@ -49,7 +49,7 @@ const express_1 = __importStar(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const cors_1 = __importDefault(require("cors"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
-const player_router_1 = __importDefault(require("@routes/player/player.router"));
+const player_router_1 = __importDefault(require("./routes/player/player.router"));
 dotenv_1.default.config();
 console.log(process.env.REACT_APP_CLOUD_NAME);
 console.log(process.env.REACT_APP_API_KEY);

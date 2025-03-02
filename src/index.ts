@@ -3,7 +3,7 @@ import { Express } from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import cookieParser from "cookie-parser";
-import playerRouter from '@routes/player/player.router';
+import playerRouter from './routes/player/player.router';
 
 dotenv.config()
 
